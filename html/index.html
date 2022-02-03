@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <!-- Aqui é a parte de navegação -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="logo.png"
+          width="120" alt="" srcset=""></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a onclick="mudaCEP()"> Busca CEP </a></li> 
+        <li><a onclick="mudaCALC()"> Calculadora </a></li> 
+      
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/">Home</a></li>
+        <li><a onclick="mudaCEP()"> Busca CEP </a></li>
+        <li><a onclick="mudaCALC()"> Calculadora </a></li> 
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- Para dar margens -->
+  <div id="content" class="container">
+
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    function mudaCEP(){
+      $('#content').load('busca-cep.html');
+      $('.sidenav-overlay').click()
+    }
+    function mudaCALC(){
+      $('#content').load('calculadora.html');
+      $('.sidenav-overlay').click()
+    }
+
+  </script>
+
+</body>
+
+</html>

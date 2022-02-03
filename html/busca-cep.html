@@ -1,0 +1,50 @@
+<h1>Busca CEP</h1>
+<!-- Aqui sao os inputs do formulário -->
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <!-- Aqui é o campo de CEP -->
+      <div class="input-field col s12">
+        <input onmouseout="consultarCepAjax()" placeholder="Ex:51030300" id="cep" type="text" class="validate">
+        <label class="active" for="cep">CEP</label>
+      </div>
+      <!-- Aqui é o campo de CIDADE -->
+      <div class="input-field col s12">
+        <input placeholder="ex: Recife" id="localidade" type="text" class="validate">
+        <label class="active" for="localidade">Cidade</label>
+      </div>
+      <!-- Aqui é o campo de RUA -->
+      <div class="input-field col s12">
+        <input placeholder="Ex: Rua nova" id="logradouro" type="text" class="validate">
+        <label class="active" for="logradouro">Rua</label>
+      </div>
+      <!-- Aqui é o campo de BAIRRO -->
+      <div class="input-field col s12">
+        <input placeholder="Ex: Pina" id="bairro" type="text" class="validate">
+        <label class="active" for="bairro">Bairro</label>
+      </div>
+      <!-- Aqui é o campo de ESTADO -->
+      <div class="input-field col s12">
+        <input placeholder="Ex: PE" id="uf" type="text" class="validate">
+        <label class="active" for="uf">Estado</label>
+      </div>
+      <!-- Aqui é o campo de DDD -->
+      <div class="input-field col s12">
+        <input placeholder="Ex: 81" id="ddd" type="text" class="validate">
+        <label class="active" for="ddd">ddd</label>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<script>
+// $('#localidade').focus()
+// $('#logradouro').focus()
+// $('#bairro').focus()
+// $('#uf').focus()
+// $('#ddd').focus()
+$('#cep').focus()
+
+
+</script>
