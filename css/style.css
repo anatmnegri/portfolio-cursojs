@@ -10,5 +10,35 @@
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+	font-size: inherit !important;
+}
+
+#resultado {
+  text-align: center; 
+  color: rgb(255, 248, 151);
+}
+
+.btn-calcular{
+  width:100%;
+  margin-bottom: 14px;
+  font-size: 32px;
+  box-shadow: 2px 2px 8px black;
+  font-weight: bolder;
+}
+
+.display-calculo{
+  font-size: 32px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.dic-calculo{
+  border-radius: 4px;
+}
+
+#resultadoCalc {
+  text-align: center; 
+  color: rgb(255, 248, 151);
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px black
 }
