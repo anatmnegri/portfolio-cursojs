@@ -100,6 +100,9 @@
          return digito
         } else if (valorDisplay > '0' && digito == '=') {
             return valorDisplay
+        } else if (valorDisplay < '0' && digito == '=') {
+            return valorDisplay
+        
         } else if (operacao && (digito == '+' || digito == '-' || digito == '*' || digito == '/')) {
              return valorDisplay
         } else if (valorDisplay.indexOf('-') == 0 && (digito == '-' || digito == '*' || digito == '/')){
